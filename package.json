@@ -1,0 +1,32 @@
+{
+  "name": "flixify",
+  "version": "1.0.0",
+  "description": "A torrent website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harry260/Flixify.git"
+  },
+  "keywords": [
+    "Torrent",
+    "Movies"
+  ],
+  "author": "Harry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Harry260/Flixify/issues"
+  },
+  "homepage": "https://github.com/Harry260/Flixify#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "torrent-search-api": "^2.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

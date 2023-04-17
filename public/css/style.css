@@ -1,0 +1,313 @@
+@import url(./app.ui.css);
+
+body {
+	background-color: var(--primary-back);
+	color: var(--primary-text);
+}
+
+.main-wrapper {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.header {
+	padding: 40px 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 88;
+}
+
+.right-sec a {
+	margin-left: 10px;
+	letter-spacing: 0px;
+	display: inline;
+	color: var(--secondary-text);
+	cursor: pointer;
+}
+
+.right-sec a:hover {
+	color: var(--primary-text);
+}
+.logo-section img {
+	width: 60px;
+	margin-right: 10px;
+}
+
+.logo-section h1 {
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: -1px;
+	margin-bottom: 5px;
+	word-wrap: break-word;
+}
+
+.search-wrap {
+	margin: 0 auto;
+	text-align: center;
+	color: var(--secondary-text);
+	margin-bottom: 100px;
+}
+
+.search-wrap p {
+	width: 500px;
+	margin: 0 auto;
+	letter-spacing: 0px;
+	margin-top: 20px;
+	font-family: "Inconsolata", monospace;
+	font-weight: 200;
+	color: rgba(236, 236, 236, 0.308);
+}
+.search-in {
+	background: none;
+	border: none;
+	color: var(--primary-text);
+	font-family: "Inconsolata", monospace;
+	font-size: 100px;
+	letter-spacing: -4px;
+	width: 100%;
+	text-align: center;
+}
+
+.preview-cards {
+	position: absolute;
+	width: 100%;
+
+	bottom: -100px;
+}
+
+.cards {
+	margin: 0 auto;
+}
+
+.card {
+	height: 300px;
+	width: 200px;
+	background-color: var(--secondary-back);
+
+	margin: 0 auto;
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+		rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+		rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	border-radius: 10px;
+	--offset-degree: 20px;
+	--rotation-degree: 15deg;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.card:nth-child(1) {
+	transform: rotate(calc(-1 * var(--rotation-degree)));
+	z-index: 1;
+	margin-right: calc(-5 * var(--offset-degree));
+	margin-bottom: calc(-2 * var(--offset-degree));
+	background-image: url(https://www.sonypictures.ca/sites/canada/files/2021-08/DP_4397882_SPIDER-MAN%20HOMECOMING_2000x3000%20LSR_English_1333x2000_thumbnail.jpg);
+}
+
+.card:nth-child(2) {
+	z-index: 2;
+	background-image: url(https://m.media-amazon.com/images/I/51MFu2e82VL.jpg);
+}
+.card:nth-child(3) {
+	transform: rotate(calc(1 * var(--rotation-degree)));
+	z-index: 3;
+	margin-left: calc(-5 * var(--offset-degree));
+	margin-bottom: calc(-2 * var(--offset-degree));
+	background-image: url(https://upload.wikimedia.org/wikipedia/en/6/66/Wednesday_Netflix_series_poster.png);
+}
+
+.card:hover {
+	margin-bottom: 4px;
+}
+
+.search-results {
+	width: 100%;
+	padding: 40px;
+}
+
+.search-bar-container {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	padding: 40px 60px;
+}
+
+.search-bar {
+	background-color: var(--secondary-back);
+	padding: 20px 40px;
+	width: 650px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	padding-left: 30px;
+}
+
+.search-bar svg {
+	margin-right: 10px;
+}
+@supports (backdrop-filter: blur(20px)) {
+	.search-bar {
+		backdrop-filter: blur(50px);
+		background-color: rgba(49, 49, 49, 0.3);
+	}
+}
+
+.secondary-search {
+	color: var(--primary-text);
+	font-size: 20px;
+}
+
+input {
+	background: none !important;
+	border: none;
+}
+
+.search-results {
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+.result-items {
+	width: 900px;
+	margin: 100px auto;
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+	border-radius: 10px;
+}
+
+.list-arr {
+	display: block !important;
+	width: 600px;
+	margin-top: 150px;
+}
+.item {
+	background-color: #211f2db4;
+	padding: 40px 50px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	transition: 0.4s;
+	margin: 10px;
+}
+
+.item .title h1 {
+	font-size: 18px;
+	letter-spacing: -1px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+.extra-info {
+	color: var(--secondary-text);
+	font-weight: 400;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.item:hover {
+	transform: scale(1.05);
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.btn-left {
+	background-color: var(--secondary-back);
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.btn-left svg {
+	width: 40px;
+}
+
+.btn-left:hover {
+	cursor: pointer;
+	background-color: #333333;
+}
+
+.loader {
+	height: 80vh;
+	width: 100%;
+}
+.loader img {
+	width: 70px;
+}
+
+svg {
+	margin: none;
+}
+
+.grid-mode,
+.list-mode {
+	margin: 0 !important;
+}
+
+.list-mode {
+	display: block;
+}
+.grid-mode {
+	display: none;
+}
+
+.list-enabled .list-mode {
+	display: none !important;
+}
+.list-enabled .grid-mode {
+	display: block !important;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.intro-wrap {
+	width: 600px;
+	background-color: var(--secondary-back);
+	padding: 60px;
+	border-radius: 15px;
+	border: 1px solid var(--hairline);
+}
+
+.intro-wrap img {
+	width: 30px;
+	border-radius: 10px;
+	opacity: 0.6;
+	margin-bottom: 10px;
+}
+
+.intro-wrap p {
+	color: var(--secondary-text);
+	letter-spacing: 0;
+	margin-top: 10px;
+	font-size: 16px;
+
+	margin-top: 20px;
+}
+
+.button {
+	background-color: #444;
+	display: inline-flex;
+	padding: 10px 15px;
+	border-radius: 5px;
+	letter-spacing: 0px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin: 20px 5px;
+	transition: 0.4s;
+	margin-top: 50px;
+}
+
+.button:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.done {
+	background-color: #3291ff;
+}

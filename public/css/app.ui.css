@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline-width: 0;
+	font-family: "Poppins", sans-serif;
+	background-position: center;
+	background-size: cover;
+}
+.c {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.vc {
+	display: flex;
+	align-items: center;
+}
+
+.hc {
+	display: flex;
+	justify-content: center;
+}
+
+.sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 89;
+	background-color: var(--primary-back);
+	display: none;
+}
+
+@supports (backdrop-filter: blur(20px)) {
+	.overlay {
+		backdrop-filter: blur(20px);
+		background-color: #13111c63;
+	}
+}
+
+:root {
+	--viewport-height: 100%;
+	--primary-back: #13111c;
+	--secondary-back: #211f2d;
+	--hairline: #33323e;
+	--secondary-text: #a1a0ab;
+	--primary-text: #dadada;
+}
+
+html,
+body {
+	height: calc(var(--viewport-height) - 55px);
+}
+
+.bottom-toast {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #0070f3;
+	padding: 10px 20px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	z-index: 999999;
+}
+
+.toast-error {
+	background-color: rgb(255, 89, 89);
+}
+.unselectable {
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+.selectable {
+	user-select: auto !important;
+	-moz-user-select: auto !important;
+	-khtml-user-select: auto !important;
+	-webkit-user-select: auto !important;
+	-o-user-select: auto !important;
+}
+
+textarea:focus,
+input:focus {
+	outline: none;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: var(--secondary-back) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--secondary-back);
+	border-radius: 10px;
+	border: 5px solid var(--primary-back);
+}
