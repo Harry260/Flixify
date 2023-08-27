@@ -4,11 +4,16 @@ body {
 	background-color: var(--primary-back);
 	color: var(--primary-text);
 }
+:root {
+	--viewport-height: 100%;
+  }
+
 
 .main-wrapper {
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
+	height: calc(var(--viewport-height) );
 }
 
 .header {
@@ -49,6 +54,7 @@ body {
 	text-align: center;
 	color: var(--secondary-text);
 	margin-bottom: 100px;
+	z-index: 5;
 }
 
 .search-wrap p {
@@ -74,7 +80,7 @@ body {
 .preview-cards {
 	position: absolute;
 	width: 100%;
-
+	border-radius:10px;
 	bottom: -100px;
 }
 
@@ -86,7 +92,7 @@ body {
 	height: 300px;
 	width: 200px;
 	background-color: var(--secondary-back);
-
+	border-radius:10px;
 	margin: 0 auto;
 	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
 		rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,

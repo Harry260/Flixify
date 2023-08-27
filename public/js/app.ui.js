@@ -1,10 +1,4 @@
 //Fix for chrome address bar Issue
-visualViewport.addEventListener("resize", () => {
-	document.documentElement.style.setProperty(
-		"--viewport-height",
-		`${visualViewport.height}px`
-	);
-});
 
 function toastMsg(msg, error = false, to = 3000) {
 	var toast = document.createElement("div");
