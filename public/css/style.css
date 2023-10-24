@@ -326,3 +326,13 @@ a {
 .done {
   background-color: #3291ff;
 }
+
+::placeholder {
+  color: rgba(218, 218, 218, 0.76);
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: rgba(218, 218, 218, 0.76);
+}
