@@ -14,4 +14,3 @@ Welcome to Flixify, your go-to torrent website powered by ThePirateBay. Browse t
 </p>
 
 
-> NOTE : THIS WEBSITE IS NOT RESPONSIVE AS OF NOW
