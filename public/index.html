@@ -2,223 +2,124 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./css/style.css" type="text/css" />
-    <link rel="stylesheet" href="./css/responsive.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <script async src="https://cdn.splitbee.io/sb.js"></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Flixify · A Super-Fast PirateBay Mirror</title>
-    <meta
-      property="og:title"
-      content="Flixify · A Super-Fast PirateBay Mirror"
-    />
-    <meta
-      property="og:description"
-      content="Get torrent files super-fast with Flixify - Powered by The Pirate Bay"
-    />
-    <meta property="og:image" content="./assets/images/banner.png" />
-    <meta property="og:image:alt" content="Flixify" />
-    <meta property="og:url" content="https://Flixify.vercel.app/" />
-    <meta name="twitter:card" content="./assets/images/banner.png" />
-    <meta
-      name="twitter:title"
-      content="Flixify · A Super-Fast PirateBay Mirror"
-    />
-    <meta
-      name="twitter:description"
-      content="Get torrent files super-fast with Flixify - Powered by The Pirate Bay"
-    />
-    <meta name="twitter:image" content="./assets/images/banner.png" />
-    <meta property="og:site_name" content="Flixify" />
     <link
       rel="icon"
       href="./assets/images/logo.png"
       type="image/png"
       sizes="32x32"
     />
-    <meta
-      property="og:title"
-      content="Flixify · A Super-Fast PirateBay Mirror"
-    />
-    <meta
-      property="og:description"
-      content="Get torrent files super-fast with Flixify - Powered by The Pirate Bay"
-    />
-    <meta property="og:image" content="./assets/images/banner.png" />
-    <meta property="og:image:alt" content="Flixify" />
-    <meta property="og:url" content="https://Flixify.vercel.app/" />
-    <meta property="og:site_name" content="Flixify" />
-    <script>
-      document.documentElement.style.setProperty(
-        "--viewport-height",
-        `${visualViewport.height}px	`
-      );
-      visualViewport.addEventListener("resize", () => {
-        document.documentElement.style.setProperty(
-          "--viewport-height",
-          `${visualViewport.height}px`
+    <title>Flixify is down!</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        background: url(./assets/images/grad.webp) no-repeat center center/cover;
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        overflow: hidden;
+      }
+
+      .box {
+        max-width: 500px;
+        width: 100%;
+        padding: 40px 20px;
+        background-color: rgba(0, 0, 0, 0.548);
+        border-radius: 20px;
+        backdrop-filter: blur(50px);
+        text-align: center;
+        color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+      img {
+        width: 100px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.795);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+        color: white !important;
+        background-image: linear-gradient(
+          to right,
+          #b8cbb8 0%,
+          #b8cbb8 0%,
+          #b465da 0%,
+          #cf6cc9 33%,
+          #ee609c 66%,
+          #ee609c 100%
         );
-      });
-    </script>
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: inline-block;
+        font-weight: 500;
+      }
 
+      @media (max-width: 600px) {
+        .box {
+          padding: 30px 15px;
+        }
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9062782908574089"
-     crossorigin="anonymous"></script>
+        h1 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        img {
+          width: 80px;
+        }
+
+        a {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
-  <body class="unselectable">
-    <div class="bg"></div>
-    <div class="header sb">
-      <div class="logo-section c">
-        <img src="./assets/images/logo.png" alt="Flixify" />
-      </div>
-      <div class="right-sec">
-        <a onclick="intro(1)">About</a>
-        <a target="_blank" href="https://github.com/Harry260">by Harry</a>
-      </div>
-    </div>
-    <div class="main-wrapper c">
-      <div class="search-wrap c">
-        <div class="searc-cont">
-          <input type="text" class="search-in" placeholder="Search.." />
-          <p>
-            Search our vast collection of torrents and discover the treasure
-            you've been seeking.
-          </p>
-        </div>
-      </div>
-      <div class="preview-cards c">
-        <div class="cards c">
-          <div class="card c1" title="Spiderman"></div>
-          <div class="card c2" title="Grand Theft Auto V"></div>
-          <div class="card c3" title="Wednesday"></div>
-        </div>
-      </div>
-    </div>
-    <div class="overlay result-overlay">
-      <div class="search-results">
-        <div class="search-bar-container sb">
-          <div class="btn-left back c">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="currentColor"
-              class="bi bi-chevron-left"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-              />
-            </svg>
-          </div>
-          <div class="search-bar">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="var(--secondary-text)"
-              class="bi bi-search"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-              />
-            </svg>
-            <input class="secondary-search" placeholder="Search" />
-          </div>
-          <div class="btn-left list-swap c">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="var(--secondary-text)"
-              class="bi bi-grid list-mode"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="var(--secondary-text)"
-              class="bi bi-grid-fill grid-mode"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"
-              />
-            </svg>
-          </div>
-        </div>
+  <body>
+    <div class="box">
+      <img src="./assets/images/logo.png" alt="Flixify" />
+      <h1>Flixify is Shuting Down!</h1>
+      <p>
+        Welp, that’s a wrap on Flixify (for now) 🎬💔<br />
+        Had to take it down—dad’s orders 😭 But hey, this ain’t the end… just a
+        plot twist 😎 <br /><br />
 
-        <div class="result-items list-arr"></div>
+        We’ll be back soon with a whole new vibe.<br />
+        Source code still vibin’ on GitHub—go check it out 💻🔥<br /><br />
 
-        <div class="loader c">
-          <img src="./assets/images/lol.webp" />
-        </div>
-      </div>
-    </div>
-    <div class="overlay intro c">
-      <div class="intro-wrap">
-        <div class="slide-1">
-          <img src="./assets/images/logo.png" alt="" />
-          <h1>Welcome!</h1>
-          <p>
-            Welcome to Flixify, your go-to torrent website powered by
-            ThePirateBay. Browse through a wide range of categories, including
-            movies, TV shows, music, and software. Find what you need easily
-            with a user-friendly interface and robust search feature. Experience
-            the power of ThePirateBay today!
-          </p>
-          <div class="button next" onclick="intro(2)">
-            <span class="button-text continue">Continue</span>
-          </div>
-        </div>
-        <div class="slide-2" hidden>
-          <img src="./assets/images/logo.png" alt="" />
-          <h1>Hold Up!</h1>
-          <p>
-            Please note that to use this website, you will need to have a
-            torrent application installed on your device, such as BitTorrent or
-            uTorrent. These applications allow you to download and manage
-            torrent files. If you do not have a torrent application installed,
-            you can download one from their respective websites
-          </p>
-          <a href="https://www.utorrent.com/" target="_blank">
-            <div class="button next">
-              <span class="button-text">uTorrent</span>
-            </div>
-          </a>
-          <a href="https://www.bittorrent.com/" target="_blank">
-            <div class="button next">
-              <span class="button-text">BitTorrent</span>
-            </div></a
-          >
-          <div class="button next done" onclick="intro(`off`)">
-            <span class="button-text">Done</span>
-          </div>
-        </div>
-      </div>
+        Meanwhile checkout my other projects below!
+      </p>
+      <a href="https://hxr-projects.netlify.app">Other projects!</a>
     </div>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.6.4.min.js"
-    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-    crossorigin="anonymous"
-  ></script>
-  <script src="./js/app.ui.js"></script>
-  <script src="./js/app.js"></script>
 </html>
